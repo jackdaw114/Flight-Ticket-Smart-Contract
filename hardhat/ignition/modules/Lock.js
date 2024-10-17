@@ -16,3 +16,8 @@ module.exports = buildModule("LockModule", (m) => {
 
   return { lock };
 });
+
+module.exports = buildModule("FlightModule", (m) =>{
+  const flightRefund = m.contract("FlightRefund");
+  return {flightRefund}
+})
